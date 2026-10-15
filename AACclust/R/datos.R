@@ -1,0 +1,25 @@
+
+#' Feline Morphology and Behavior Dataset
+#'
+#' A dataset of 30 feline species described by 14 categorical variables.
+#'
+#' @format A data frame with 30 rows and 14 variables:
+#' \describe{
+#'   \item{tipopiel}{Skin type (1-4)}
+#'   \item{longpoill}{Hair length (0-1)}
+#'   \item{retract}{Retractable claws (0-1)}
+#'   \item{comport}{Behavior (1-3)}
+#'   \item{orielles}{Ear type (1-2)}
+#'   \item{larynx}{Larynx structure (0-1)}
+#'   \item{tailler}{Size (1-3)}
+#'   \item{poids}{Weight (1-3)}
+#'   \item{longueurs}{Length (1-3)}
+#'   \item{queue}{Tail type (1-3)}
+#'   \item{dents}{Teeth type (0-1)}
+#'   \item{typproie}{Prey type (1-3)}
+#'   \item{arbre}{Arboreal habit (0-1)}
+#'   \item{chasse}{Hunting style (0-1)}
+#' }
+#' @source Morphological and behavioral characterization of Felidae family.
+"felinos"
+

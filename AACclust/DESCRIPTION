@@ -1,0 +1,27 @@
+Package: AACclust
+Type: Package
+Title: Affinity Contraction Agglomerative Clustering for Categorical Data
+Version: 1.0.0
+Authors@R: c(
+    person("Tarik", "Faouzi", email = "tarik.faouzi@usach.cl", role = c("aut", "cre")),
+    person("Ruben", "Carvajal Schiaffino", email = "ruben.carvajal@usach.cl", role = "aut"))
+Description: Implements the Affinity Contraction Agglomerative Clustering (AAC) 
+    algorithm for categorical data, along with the Quality Index (QI) for 
+    partition quality assessment. The AAC algorithm operates on exact attribute 
+    matching and mutual affinity edge contractions, avoiding dependency on 
+    initial medoids. A parallel optimization framework (Fork-Join model) 
+    efficiently searches for the optimal number of clusters.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+Imports: 
+    Rcpp,
+    parallel
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.1
