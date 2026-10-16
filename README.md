@@ -25,13 +25,17 @@ data(felinos)
 
 # Run AAC with k=5
 particion <- aac_cluster(felinos, alpha = 5)
+
 print(particion)
 
 # Calculate QI
 qi <- qi_index(felinos, particion)
+
 cat("QI =", qi, "\n")
 
 # Search for optimal k automatically
 resultado <- buscar_k_optimo(felinos)
+
 cat("Optimal k =", resultado$k_optimo, "\n")
+
 cat("Maximum QI =", resultado$QI_maximo, "\n")
