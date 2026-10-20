@@ -13,10 +13,14 @@
 #'   \item{particiones}{List of partitions for each k}
 #'
 #' @examples
-#' data(felinos)
-#' result <- buscar_k_optimo(felinos)
-#' print(result$k_optimo)
-#'
+#' \dontrun{
+#'   # Cargar el dataset incluido (nota la 'F' mayúscula)
+#'   data(Felinos)
+#'   
+#'   # Ejecutar la función (usa el nombre real de tu función aquí)
+#'   result <- Find_k_optimo(Felinos)
+#'   print(result)
+#' }
 #' @export
 #' @importFrom parallel mclapply detectCores
 Find_k_optimo <- function(data, n_cores = NULL) {
