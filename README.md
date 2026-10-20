@@ -1,6 +1,10 @@
 # AACluster
 # Parallel Optimization of Categorical Clustering via an Adaptive Agglomerative Algorithm
 # How to install  AAACluster:
+# Primero:
+
+install.packages(c("Rcpp", "cluster", "dbscan", "amap", "devtools", "roxygen2"))
+
 
 # Go to the package directory
 setwd("~/.../AACclust")
